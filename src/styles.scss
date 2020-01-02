@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+.add{
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.input-field{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
+}
+h5{
+    // font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

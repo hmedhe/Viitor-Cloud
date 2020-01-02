@@ -1,0 +1,16 @@
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+  
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" autocomplete="off">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" formControlName="username">
+        <input type="password" id="password" class="fadeIn third a" name="login" placeholder="password" formControlName="password">
+  
+        <button type="submit" class="fadeIn fourth add" value="Log In"> Login </button>
+      </form>
+  
+
+  
+    </div>
+  </div>
+  <ngx-spinner></ngx-spinner>

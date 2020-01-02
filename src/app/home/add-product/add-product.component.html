@@ -1,0 +1,15 @@
+<div class="container" style="padding: 10px;">
+    
+<form >
+    <input type="text" [(ngModel)]="product.productName" name="productName" class="input-field" placeholder="Product Name" style="width: 100%;"> 
+    <input type="number" [(ngModel)]="product.productPrice" name="productPrice" class="input-field" placeholder="Product Price" style="width: 100%;">  
+    <input type="number"  [(ngModel)]="product.productSKU" name="productSKU" class="input-field" placeholder="Product Code" style="width: 100%;">
+    <!-- <input type="number" [(ngModel)]="product.productId" name="productId">   -->
+    
+</form>
+<div style="text-align: center;">
+    <button (click)="OnSave(product)" class="add">Save</button>
+
+    <button (click)="OnCancel()" class="add" style="background-color: red !important;">Close</button>
+</div>
+</div>

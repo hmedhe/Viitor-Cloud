@@ -1,0 +1,70 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "productName": "shoes",
+      "productPrice": 500,
+      "productSKU": 1
+    },
+    {
+      "id": 2,
+      "productName": "T-shirt",
+      "productPrice": 600,
+      "productSKU": 2
+    },
+    {
+      "id": 3,
+      "productName": "Jeans",
+      "productPrice": 700,
+      "productSKU": 3
+    },
+    {
+      "id": 4,
+      "productName": "Jacket",
+      "productPrice": 800,
+      "productSKU": 4
+    },
+    {
+      "productName": "Winter Wear",
+      "productPrice": 1000,
+      "productSKU": 5,
+      "id": 5
+    },
+    {
+      "productName": "flip-flop",
+      "productPrice": 200,
+      "productSKU": 123,
+      "id": 6
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "productName": "shoes",
+      "productPrice": 500,
+      "productSKU": 1
+    },
+    {
+      "id": 2,
+      "productName": "T-shirt",
+      "productPrice": 600,
+      "productSKU": 2
+    },
+    {
+      "id": 3,
+      "productName": "Jeans",
+      "productPrice": 700,
+      "productSKU": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

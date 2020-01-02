@@ -1,0 +1,25 @@
+<header>
+    <div>
+        <h5>Welcome to Cart</h5>
+   
+    </div>
+</header>
+<div class="container">
+    <div class="row" *ngFor="let list of product">
+
+
+        <div class=" card-body" style="text-align: center;box-shadow: 5px 6px 7px 0px grey;">
+            <div style="height: 200px;text-align: center;">
+                <h5>Name: {{list.productName}}</h5>
+                <h5>Price: {{list.productPrice}}</h5>
+
+
+
+            </div>
+            <!-- <div style="padding: 20px;text-align:center">
+                <button class="add" (click)="AddToCart(list)">Add to Cart</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<ngx-spinner></ngx-spinner>

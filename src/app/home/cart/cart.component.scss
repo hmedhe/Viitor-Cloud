@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+
+}
+.row{
+    width:25%;
+    padding: 20px;
+}
+
+
+    
+@media all and (max-width: 600px){
+.card-body{
+    width:100% !important;
+}
+.row{
+    width:100%; 
+    padding: 0px;
+}
+.row .container{
+     padding-right:inherit;
+}
+}
+@media all and (max-width:1024px) and (min-width: 600px){
+    .row {
+        width: auto !important;
+    }
+    
+}
+@media (min-width: 768px){
+.container {
+    max-width: inherit;
+}
+}

@@ -1,0 +1,48 @@
+<header>
+<div>
+    <h5>Welcome</h5>
+    <ul>
+        <li *ngFor="let user of users"> <h5> {{user.firstName}} {{user.lastName}} </h5></li>
+    </ul>
+</div>
+</header>
+
+
+<!-- <input [(ngModel)]="searchTerm" name="searchTerm"> -->
+
+<div style="text-align:end ;">
+<button (click)="AddProduct()" class="add"> Add Product</button>
+
+<button (click)="ToCart()" class="add"> Go to cart</button>
+</div>
+
+<div>
+    <input type="text" placeholder="Search" (keyup)="Search($event.target.value)" class="input-field">
+</div>
+
+
+<ngx-spinner></ngx-spinner>
+
+<div class="container">
+    <div class="row" *ngFor="let list of product">
+     
+            
+<div   class=" card-body" style="text-align: center;box-shadow: 5px 6px 7px 0px grey;">
+<div style="height: 200px;text-align: center;">
+   <h5>Name: {{list.productName}}</h5>
+   <h5>Price: {{list.productPrice}}</h5>
+   
+
+
+</div>
+    <div  style="padding: 20px;text-align:center">
+        <button class="add"  (click)="AddToCart(list)">Add to Cart</button>
+    </div>
+</div>  
+    </div> 
+</div>
+<footer>
+    <div style="text-align: end;">
+    <p><a [routerLink]="['/login']" class="add">Logout</a></p>
+</div>
+</footer>

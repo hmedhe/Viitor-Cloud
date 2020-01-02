@@ -89,7 +89,7 @@ export class ProductListComponent implements OnInit {
     this.http.get('http://localhost:3000/product').pipe(
       debounceTime(1000),
       distinctUntilChanged(),
-      map((response) => {
+      map((response:any []) => {
       response = response.filter((data) => data.productName === text);
       return response;
   })).subscribe( (res:any [])=>{

@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./add-product.component.scss']
 })
 export class AddProductComponent implements OnInit {
-  product= {}
+  product:any={}
   
   constructor(private ProductService:ProductService,
     private modalRef:BsModalRef) { }

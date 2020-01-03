@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
-@Injectable({
+@Injectable({ 
   providedIn: 'root'
 })
 export class AuthenticationService {
@@ -18,6 +18,7 @@ export class AuthenticationService {
                   // store user details and basic auth credentials in local storage 
                   // to keep user logged in between page refreshes
                   user.authdata = window.btoa(username + ':' + password);
+          
                   localStorage.setItem('currentUser', JSON.stringify(user));
               }
 

@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup
   loading = false;
   submitted = false;
-  returnUrl: string;
+  returnUrl: string; 
   error = '';
   constructor( private formBuilder: FormBuilder,
     private route: ActivatedRoute,
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
 
   // convenience getter for easy access to form fields
   get f() { return this.loginForm.controls; }
-
+ 
   onSubmit() {
       this.submitted = true;
 
@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
           .pipe(first())
           .subscribe(
               data => {
-               this.spinner.hide()
+               
                 console.log(data)
                   this.router.navigate([this.returnUrl]);
                   Swal.fire('Login Successful', 
@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit {
                     'success')
               },
               error => {
+                this.spinner.hide()
                   this.error = error;
                   Swal.fire(this.error, 
                     // 'Something went wrong!', 
